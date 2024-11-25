@@ -1,13 +1,13 @@
 # Personal Finance Management Application  
 
 ## 📋 Table of Contents  
-- [Introduction](#introduction)  
-- [Overview](#overview)  
-- [Features](#features)  
-- [Requirements](#requirements)  
-- [Project Folder Structure](#project-folder-structure)  
+- [Introduction](#Introduction)  
+- [Overview](#Overview)  
+- [Features](#Features)  
+- [Requirements](#Requirements)  
+- [Project Folder Structure](#Project Folder Structure)  
 - [Usage](#usage)  
-- [Conclusion](#conclusion)  
+- [Conclusion](#Conclusion)  
 
 ---
 
@@ -119,7 +119,6 @@ Run the development server:
 
 ```bash
 python manage.py runserver
-Access the application in your browser: Open your browser and navigate to:
 ```
 
 1. **Access the application in your browser:**
