@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Header Styles */
+.home-header {
+    text-align: center;
+    padding: 30px;
+    background-color: #1f4b99;
+    color: white;
+    border-radius: 10px;
+}
+
+.transaction-form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 12px 20px;
+    background-color: #1f4b99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #143774;
+}
+
+.btn-primary {
+    background-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-cancel {
+    background-color: #ccc;
+}
+
+.btn-cancel:hover {
+    background-color: #aaa;
+}
+
+/* Table Styles */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.transaction-table th, .transaction-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.transaction-table th {
+    background-color: #f2f2f2;
+}
+
+/* Form Styles */
+.transaction-form-container {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.transaction-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transaction-form-container input,
+.transaction-form-container select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.transaction-form-container button {
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transaction-form-container button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-header {
+        padding: 20px;
+    }
+
+    .transaction-form-container form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .transaction-table {
+        margin-top: 20px;
+    }
+}
