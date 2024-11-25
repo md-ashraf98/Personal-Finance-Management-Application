@@ -5,8 +5,8 @@
 - [Overview](#Overview)  
 - [Features](#Features)  
 - [Requirements](#Requirements)  
-- [Project Folder Structure](#Project Folder Structure)  
-- [Usage](#usage)  
+- [Project-Folder-Structure](#Project-Folder-Structure)  
+- [Usage](#Usage)  
 - [Conclusion](#Conclusion)  
 
 ---
