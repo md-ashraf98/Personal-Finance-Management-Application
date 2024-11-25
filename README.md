@@ -42,37 +42,39 @@ To run the project, ensure you have the following installed:
 
 ## ⚙️ Project Folder  
 
+# Project Folder Structure
+
 finance_management_application/
 ├── finance_app/
-│   ├── migrations/
-│   ├── static/
+│   ├── migrations/                          # Database migrations
+│   ├── static/                              # Static files like CSS, JS
 │   │   ├── CSS/
-│   │   │   └── style.css         # CSS for styling the frontend
-│   ├── templates/
+│   │   │   └── style.css                    # Custom styles for the frontend
+│   ├── templates/                           # HTML templates
 │   │   ├── finance_app/
-│   │   │   ├── add_transaction.html    # Template for adding new transactions
-│   │   │   ├── edit_transaction.html   # Template for editing transactions
-│   │   │   ├── delete_transaction.html # Template for deleting transactions
-│   │   │   ├── home.html               # Main dashboard template
-│   │   │   ├── registration.html       # Template for user registration
-│   │   │   └── cover.html              # Landing page template
-│   ├── __init__.py
-│   ├── admin.py                  # Django admin configuration
-│   ├── apps.py                   # Django app configuration
-│   ├── forms.py                  # Forms for user inputs (transactions, registration)
-│   ├── models.py                 # Django models for user and transaction data
-│   ├── tests.py                  # Unit tests for the application
-│   ├── urls.py                   # URL routing for the application
-│   └── views.py                  # Backend logic for handling user actions
-├── finance_management_application/
-│   ├── __init__.py
-│   ├── asgi.py                   # ASGI configuration for the project
-│   ├── settings.py               # Django settings for the project
-│   ├── urls.py                   # Root URL configuration
-│   └── wsgi.py                   # WSGI configuration for deployment
-├── db.sqlite3                    # SQLite database for storing user and transaction data
-├── manage.py                     # Django project management script
-├── requirements.txt              # Python packages required for the project
+│   │   │   ├── add_transaction.html         # Form to add new transaction
+│   │   │   ├── edit_transaction.html        # Form to edit existing transaction
+│   │   │   ├── delete_transaction.html      # Page to confirm deletion of transaction
+│   │   │   ├── home.html                    # Main dashboard page
+│   │   │   ├── registration.html            # Registration page for new users
+│   │   │   └── cover.html                   # Cover page for the application
+│   ├── __init__.py                           # Mark the directory as a Python package
+│   ├── admin.py                              # Admin configurations for the app
+│   ├── apps.py                               # App configuration
+│   ├── forms.py                              # Form classes for transactions and user registration
+│   ├── models.py                             # Database models for transactions and users
+│   ├── tests.py                              # Tests for the app's functionality
+│   ├── urls.py                               # URL routing for the app
+│   └── views.py                              # Logic for handling requests and rendering views
+├── finance_management_application/          # Main Django project folder
+│   ├── __init__.py                           # Initialize the project
+│   ├── asgi.py                               # ASGI configuration for asynchronous support
+│   ├── settings.py                           # Settings for the Django project
+│   ├── urls.py                               # Main URL routing for the project
+│   └── wsgi.py                               # WSGI configuration for deployment
+├── db.sqlite3                                # SQLite database file
+├── manage.py                                 # Django project management script
+└── requirements.txt                          # List of required Python packages
 
 
 ### Install Dependencies  
