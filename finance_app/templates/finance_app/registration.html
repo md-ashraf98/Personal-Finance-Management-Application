@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+<body>
+    <div class="registration-container">
+        <h1 class="registration-title">Welcome to Registration</h1>
+        <div class="forms-container">
+            <!-- Sign In Section -->
+            <div class="form-section">
+                <h2>Sign In</h2>
+                <form method="POST" action="{% url 'registration' %}">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="username_or_phone">Username/Phone:</label>
+                        <input type="text" id="username_or_phone" name="username_or_phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" name="sign_in" class="btn">Sign In</button>
+                </form>
+            </div>
+
+            <!-- Sign Up Section -->
+            <div class="form-section">
+                <h2>Sign Up</h2>
+                <form method="POST" action="{% url 'registration' %}">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="full_name">Full Name:</label>
+                        <input type="text" id="full_name" name="full_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact_number">Contact Number:</label>
+                        <input type="tel" id="contact_number" name="contact_number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password1" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">Confirm Password:</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required>
+                    </div>
+                    <button type="submit" name="sign_up" class="btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
